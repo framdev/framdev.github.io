@@ -1,0 +1,28 @@
+---
+const { post } = Astro.props;
+---
+
+<a class="mb-4 block" href={`/posts/${post.slug}/`}>
+  <article
+    class="p-6 rounded-lg borde shadow-md bg-zinc-800 border-2 border-zinc-400"
+  >
+    <div class="flex justify-between items-center mb-5 text-gray-500">
+      <span
+        class="bg-emerald-400 text-white text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded cursor-"
+      >
+        Tag
+      </span>
+      <span class="text-sm">
+        {post.data.pubDate}
+      </span>
+    </div>
+    <h2
+      class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+    >
+      {post.data.title}
+    </h2>
+    <p class="mb-5 font-light text-gray-500 dark:text-gray-400">
+      {post.data.description}
+    </p>
+  </article>
+</a>

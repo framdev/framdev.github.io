@@ -1,0 +1,16 @@
+---
+import Header from "../components/Header.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		
+	</head>
+	<body class="bg-zinc-800">
+		<Header />
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>

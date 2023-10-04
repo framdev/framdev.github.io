@@ -1,2 +1,1 @@
-# magralol.github.io
-Personal Website
+Personal site
